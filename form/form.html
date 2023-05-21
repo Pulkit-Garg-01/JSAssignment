@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2  class="heading">Sign-up Form</h2>
+  <!-- see this line once again -->
+  <form id="signupForm" onsubmit="validateForm(event)">
+    <label for="eduqual">Educational Qualification:</label>
+    <select id="eduqual" name="eduqual">
+      <option value="">Select</option>
+      <option value="High School">High School</option>
+      <option value="Bachelor's Degree">B.Tech</option>
+      <option value="Master's Degree">M.Tech</option>
+      <option value="Ph.D.">Ph.D.</option>
+    </select>
+    <br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" placeholder="Enter phone number" >
+    <br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18">
+    <br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-type password ">
+    <br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" placeholder="Enter your city">
+    <br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+  <div id="errorContainer"></div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
