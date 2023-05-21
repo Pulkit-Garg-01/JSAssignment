@@ -1,0 +1,30 @@
+.headings {
+  background-color: green;
+  font-size: 50px;
+  text-decoration: white;
+  margin-left: 10px;
+  text-indent: unset;
+  line-height: 70px;
+}
+
+
+
+.table-responsive {
+    display: table;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+    padding: auto;
+    border: 2px;
+    text-align: center;
+    font-size: 30px;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
