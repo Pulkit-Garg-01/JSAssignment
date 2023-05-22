@@ -16,7 +16,8 @@ document.getElementById("button").addEventListener("click",signIn);
            
           })  
           .then((response) => response.json())
-  .then((json) => console.log(json))
+  .then((json) => {console.log(json);
+                  alert("Sign in Successful");})
   .catch(error=>console.log("Cannot fetch data"));
 
 
