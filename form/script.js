@@ -14,6 +14,7 @@ function validateForm(event) {
     // Regex
     var phoneRegex = /^[6-9]\d{9}$/; 
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    var passcode=/^(?=.*[!@#$&*]).{8}$/;
 
     // Clear previous error messages
     var errorContainer = document.getElementById("errorContainer");
@@ -51,6 +52,10 @@ function validateForm(event) {
       displayError("Please enter a password.", "password");
       isValid = false;
     }
+    if(!password.match(passcode)){
+      displayError("password hould have one special case letter and should be of atleast length 8");
+      isValid=false;
+    }
 
     if (confirmPassword !== password) {
       displayError("Passwords do not match.", "confirmPassword");
@@ -70,6 +75,7 @@ function validateForm(event) {
     if (isValid) {
       // Submit the form or perform any other desired action
       document.getElementById("signupForm").submit();
+      alert("Sign Up Successful")
     }
   }
 
